@@ -8,6 +8,9 @@ class Settings(BaseSettings):
     meridian_api_url: str = "http://127.0.0.1:8000"
     meridian_timeout: int = 10
 
+    # CyberGraph-AD API (optional)
+    cybergraph_api_url: str = ""
+
     # Output
     output_dir: str = "output"
 
