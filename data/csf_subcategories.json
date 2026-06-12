@@ -1,0 +1,342 @@
+[
+  {
+    "id": "GV.OC-01",
+    "function": "Govern",
+    "function_id": "GV",
+    "category": "Organizational Context",
+    "category_id": "GV.OC",
+    "title": "The organizational mission is understood and informs cybersecurity risk management",
+    "description": "The organization's mission, objectives, stakeholders, and activities are understood and used to inform cybersecurity risk decisions, including AI system deployments.",
+    "ai_relevance": "high",
+    "ai_notes": "AI systems must be evaluated against organizational mission — autonomous AI decisions must align with organizational values and risk appetite.",
+    "informative_references": {
+      "nist_ai_rmf": ["GOVERN 1.1", "GOVERN 1.2"],
+      "iso_42001": ["4.1", "4.2"],
+      "mitre_atlas": [],
+      "owasp_llm": []
+    }
+  },
+  {
+    "id": "GV.OC-02",
+    "function": "Govern",
+    "function_id": "GV",
+    "category": "Organizational Context",
+    "category_id": "GV.OC",
+    "title": "Internal and external stakeholders are understood, and their needs inform cybersecurity risk management",
+    "description": "Stakeholders with interest in AI systems — including regulators, customers, and employees — are identified and their cybersecurity needs addressed.",
+    "ai_relevance": "high",
+    "ai_notes": "AI system stakeholders include data subjects, model consumers, regulators (EU AI Act, CCPA), and internal teams.",
+    "informative_references": {
+      "nist_ai_rmf": ["GOVERN 1.1", "GOVERN 4.1"],
+      "iso_42001": ["4.2", "5.1"],
+      "mitre_atlas": [],
+      "owasp_llm": []
+    }
+  },
+  {
+    "id": "GV.OC-03",
+    "function": "Govern",
+    "function_id": "GV",
+    "category": "Organizational Context",
+    "category_id": "GV.OC",
+    "title": "Legal, regulatory, and contractual requirements regarding cybersecurity are understood and managed",
+    "description": "Legal and regulatory obligations relevant to AI systems are identified and compliance is maintained.",
+    "ai_relevance": "high",
+    "ai_notes": "Includes EU AI Act risk classification, CCPA/GDPR for training data, and sector-specific AI regulations (healthcare, finance).",
+    "informative_references": {
+      "nist_ai_rmf": ["GOVERN 1.7", "MAP 5.1"],
+      "iso_42001": ["4.2", "9.1"],
+      "mitre_atlas": [],
+      "owasp_llm": ["LLM09"]
+    }
+  },
+  {
+    "id": "GV.RM-01",
+    "function": "Govern",
+    "function_id": "GV",
+    "category": "Risk Management Strategy",
+    "category_id": "GV.RM",
+    "title": "Risk management objectives are established and agreed to by organizational stakeholders",
+    "description": "AI risk tolerance and risk appetite are defined, documented, and agreed upon by leadership.",
+    "ai_relevance": "high",
+    "ai_notes": "AI risk tolerance must address model failure modes, bias, hallucination rates, and adversarial robustness thresholds.",
+    "informative_references": {
+      "nist_ai_rmf": ["GOVERN 1.3", "GOVERN 1.4"],
+      "iso_42001": ["6.1", "6.2"],
+      "mitre_atlas": [],
+      "owasp_llm": []
+    }
+  },
+  {
+    "id": "GV.RM-02",
+    "function": "Govern",
+    "function_id": "GV",
+    "category": "Risk Management Strategy",
+    "category_id": "GV.RM",
+    "title": "Risk appetite and risk tolerance statements are established, communicated, and maintained",
+    "description": "Documented risk appetite statements cover AI-specific risks including model drift, data poisoning, and inference attacks.",
+    "ai_relevance": "high",
+    "ai_notes": "Risk tolerance for AI must specify acceptable false positive/negative rates, adversarial robustness thresholds, and drift limits.",
+    "informative_references": {
+      "nist_ai_rmf": ["GOVERN 1.4", "GOVERN 1.5"],
+      "iso_42001": ["6.1.2"],
+      "mitre_atlas": [],
+      "owasp_llm": []
+    }
+  },
+  {
+    "id": "GV.RM-06",
+    "function": "Govern",
+    "function_id": "GV",
+    "category": "Risk Management Strategy",
+    "category_id": "GV.RM",
+    "title": "A standardized method for calculating, documenting, categorizing, and prioritizing cybersecurity risks is established and communicated",
+    "description": "AI risk scoring methodology is standardized and applied consistently across all AI systems.",
+    "ai_relevance": "high",
+    "ai_notes": "Integrates with Meridian risk scoring — asset risk scores from the knowledge graph feed this subcategory's evidence.",
+    "informative_references": {
+      "nist_ai_rmf": ["MEASURE 2.5", "MEASURE 2.6"],
+      "iso_42001": ["6.1.2"],
+      "mitre_atlas": ["AML.T0000"],
+      "owasp_llm": []
+    }
+  },
+  {
+    "id": "GV.PO-01",
+    "function": "Govern",
+    "function_id": "GV",
+    "category": "Policy",
+    "category_id": "GV.PO",
+    "title": "Policy for managing cybersecurity risks is established based on organizational context, cybersecurity strategy, and priorities",
+    "description": "AI security policy is documented and covers the full ML lifecycle: data acquisition, training, deployment, monitoring, and retirement.",
+    "ai_relevance": "high",
+    "ai_notes": "Policy must address agentic AI behaviors, autonomous decision-making boundaries, and human oversight requirements.",
+    "informative_references": {
+      "nist_ai_rmf": ["GOVERN 1.1", "GOVERN 6.1"],
+      "iso_42001": ["5.2", "6.2"],
+      "mitre_atlas": [],
+      "owasp_llm": ["LLM08"]
+    }
+  },
+  {
+    "id": "GV.RR-01",
+    "function": "Govern",
+    "function_id": "GV",
+    "category": "Roles, Responsibilities, and Authorities",
+    "category_id": "GV.RR",
+    "title": "Organizational leadership is responsible and accountable for cybersecurity risk and fosters a culture that is risk-aware",
+    "description": "Executive accountability for AI security risk is established, with clear ownership of AI system risk decisions.",
+    "ai_relevance": "high",
+    "ai_notes": "AI governance requires designated roles: AI Risk Owner, Model Risk Officer, and AI Ethics Board representation.",
+    "informative_references": {
+      "nist_ai_rmf": ["GOVERN 2.1", "GOVERN 2.2"],
+      "iso_42001": ["5.1", "5.3"],
+      "mitre_atlas": [],
+      "owasp_llm": []
+    }
+  },
+  {
+    "id": "ID.AM-01",
+    "function": "Identify",
+    "function_id": "ID",
+    "category": "Asset Management",
+    "category_id": "ID.AM",
+    "title": "Inventories of hardware managed by the organization are maintained",
+    "description": "Physical and virtual infrastructure supporting AI workloads is inventoried — GPUs, TPUs, inference servers, and training clusters.",
+    "ai_relevance": "medium",
+    "ai_notes": "AI compute infrastructure (GPU clusters, inference endpoints) must be included in hardware asset inventory.",
+    "informative_references": {
+      "nist_ai_rmf": ["MAP 1.1"],
+      "iso_42001": ["8.1"],
+      "mitre_atlas": [],
+      "owasp_llm": []
+    }
+  },
+  {
+    "id": "ID.AM-02",
+    "function": "Identify",
+    "function_id": "ID",
+    "category": "Asset Management",
+    "category_id": "ID.AM",
+    "title": "Inventories of software, services, and systems managed by the organization are maintained",
+    "description": "AI models, inference APIs, training pipelines, model registries, and ML frameworks are inventoried as software assets.",
+    "ai_relevance": "high",
+    "ai_notes": "Integrates with Meridian asset inventory — AI asset types include AIModel, InferenceAPI, TrainingData, MLPipeline, ModelRegistry.",
+    "informative_references": {
+      "nist_ai_rmf": ["MAP 1.1", "MAP 2.1"],
+      "iso_42001": ["8.1", "8.2"],
+      "mitre_atlas": [],
+      "owasp_llm": []
+    }
+  },
+  {
+    "id": "ID.AM-07",
+    "function": "Identify",
+    "function_id": "ID",
+    "category": "Asset Management",
+    "category_id": "ID.AM",
+    "title": "Inventories of data and corresponding metadata for designated protection are maintained",
+    "description": "Training datasets, validation sets, model weights, and inference logs are inventoried with sensitivity classifications.",
+    "ai_relevance": "high",
+    "ai_notes": "Training data provenance, PII classification, and data lineage must be tracked. Includes synthetic data and third-party datasets.",
+    "informative_references": {
+      "nist_ai_rmf": ["MAP 1.6", "MAP 2.2"],
+      "iso_42001": ["8.3", "8.4"],
+      "mitre_atlas": ["AML.T0031", "AML.T0037"],
+      "owasp_llm": ["LLM03", "LLM06"]
+    }
+  },
+  {
+    "id": "ID.RA-01",
+    "function": "Identify",
+    "function_id": "ID",
+    "category": "Risk Assessment",
+    "category_id": "ID.RA",
+    "title": "Vulnerabilities in assets are identified, validated, and recorded",
+    "description": "AI-specific vulnerabilities — model weaknesses, adversarial susceptibility, supply chain risks — are identified and tracked.",
+    "ai_relevance": "high",
+    "ai_notes": "Includes ML framework CVEs, prompt injection vulnerabilities, and model extraction risks. Integrates with Meridian vulnerability scoring.",
+    "informative_references": {
+      "nist_ai_rmf": ["MEASURE 2.1", "MEASURE 2.2"],
+      "iso_42001": ["6.1.2"],
+      "mitre_atlas": ["AML.T0051", "AML.T0043", "AML.T0005"],
+      "owasp_llm": ["LLM01", "LLM02", "LLM04"]
+    }
+  },
+  {
+    "id": "ID.RA-02",
+    "function": "Identify",
+    "function_id": "ID",
+    "category": "Risk Assessment",
+    "category_id": "ID.RA",
+    "title": "Cyber threat intelligence is received from information sharing forums and sources",
+    "description": "Threat intelligence on AI-specific attack campaigns is consumed from MITRE ATLAS, MITRE ATT&CK, and sector ISACs.",
+    "ai_relevance": "high",
+    "ai_notes": "MITRE ATLAS provides AI-specific threat actor TTPs. Meridian knowledge graph provides cross-referenced threat intelligence.",
+    "informative_references": {
+      "nist_ai_rmf": ["MEASURE 2.3"],
+      "iso_42001": ["6.1.2"],
+      "mitre_atlas": ["AML.T0000"],
+      "owasp_llm": []
+    }
+  },
+  {
+    "id": "ID.RA-05",
+    "function": "Identify",
+    "function_id": "ID",
+    "category": "Risk Assessment",
+    "category_id": "ID.RA",
+    "title": "Threats, vulnerabilities, likelihoods, and impacts are used to understand inherent risk and inform risk response prioritization",
+    "description": "AI risk assessments combine threat actor intelligence, asset criticality, vulnerability severity, and attack path analysis.",
+    "ai_relevance": "high",
+    "ai_notes": "Meridian risk scores (0-10) provide quantitative inherent risk inputs. Parallel failure mode scoring models multi-path attack risk.",
+    "informative_references": {
+      "nist_ai_rmf": ["MEASURE 2.5", "MEASURE 2.6"],
+      "iso_42001": ["6.1.2"],
+      "mitre_atlas": ["AML.T0000"],
+      "owasp_llm": []
+    }
+  },
+  {
+    "id": "PR.AA-01",
+    "function": "Protect",
+    "function_id": "PR",
+    "category": "Identity Management, Authentication, and Access Control",
+    "category_id": "PR.AA",
+    "title": "Identities and credentials for authorized users, services, and hardware are managed by the organization",
+    "description": "AI service accounts, API keys, model access tokens, and inference endpoint credentials are managed under identity governance.",
+    "ai_relevance": "high",
+    "ai_notes": "Inference APIs require strong authentication. Model registry access must be role-restricted. API keys for LLM services must be rotated.",
+    "informative_references": {
+      "nist_ai_rmf": ["GOVERN 6.2"],
+      "iso_42001": ["8.1"],
+      "mitre_atlas": ["AML.T0051"],
+      "owasp_llm": ["LLM02", "LLM09"]
+    }
+  },
+  {
+    "id": "PR.AA-05",
+    "function": "Protect",
+    "function_id": "PR",
+    "category": "Identity Management, Authentication, and Access Control",
+    "category_id": "PR.AA",
+    "title": "Access permissions, entitlements, and authorizations are defined in a policy, managed, enforced, and reviewed",
+    "description": "Least-privilege access to AI assets — training data, model weights, inference APIs — is enforced and regularly reviewed.",
+    "ai_relevance": "high",
+    "ai_notes": "Access to high-criticality assets (TrainingData containing PII, AIModel weights) must follow need-to-know. Rate limiting on InferenceAPIs mitigates model extraction.",
+    "informative_references": {
+      "nist_ai_rmf": ["GOVERN 6.2", "MANAGE 2.2"],
+      "iso_42001": ["8.1", "8.4"],
+      "mitre_atlas": ["AML.T0024", "AML.T0035"],
+      "owasp_llm": ["LLM02"]
+    }
+  },
+  {
+    "id": "PR.DS-01",
+    "function": "Protect",
+    "function_id": "PR",
+    "category": "Data Security",
+    "category_id": "PR.DS",
+    "title": "The confidentiality, integrity, and availability of data-at-rest are protected",
+    "description": "Training data, model weights, and inference logs stored at rest are encrypted and integrity-verified.",
+    "ai_relevance": "high",
+    "ai_notes": "Model weights are high-value IP. Training data containing PII requires encryption at rest. Integrity verification prevents data poisoning at storage layer.",
+    "informative_references": {
+      "nist_ai_rmf": ["MEASURE 2.7"],
+      "iso_42001": ["8.3"],
+      "mitre_atlas": ["AML.T0031"],
+      "owasp_llm": ["LLM03", "LLM06"]
+    }
+  },
+  {
+    "id": "PR.DS-02",
+    "function": "Protect",
+    "function_id": "PR",
+    "category": "Data Security",
+    "category_id": "PR.DS",
+    "title": "The confidentiality, integrity, and availability of data-in-transit are protected",
+    "description": "Inference requests, model outputs, and training data transfers are encrypted in transit.",
+    "ai_relevance": "high",
+    "ai_notes": "Inference API traffic must be TLS-encrypted. Prompt content and model responses may contain sensitive data requiring transport-level protection.",
+    "informative_references": {
+      "nist_ai_rmf": ["MEASURE 2.7"],
+      "iso_42001": ["8.3"],
+      "mitre_atlas": ["AML.T0024"],
+      "owasp_llm": ["LLM02", "LLM06"]
+    }
+  },
+  {
+    "id": "PR.PS-01",
+    "function": "Protect",
+    "function_id": "PR",
+    "category": "Platform Security",
+    "category_id": "PR.PS",
+    "title": "Configuration management practices are established and applied",
+    "description": "AI infrastructure configurations — model serving parameters, API rate limits, container security — are managed as code and version-controlled.",
+    "ai_relevance": "medium",
+    "ai_notes": "Model serving configuration (batch size, timeout, rate limits) directly affects adversarial robustness and availability.",
+    "informative_references": {
+      "nist_ai_rmf": ["MANAGE 2.1"],
+      "iso_42001": ["8.1"],
+      "mitre_atlas": [],
+      "owasp_llm": ["LLM07"]
+    }
+  },
+  {
+    "id": "PR.IR-01",
+    "function": "Protect",
+    "function_id": "PR",
+    "category": "Technology Infrastructure Resilience",
+    "category_id": "PR.IR",
+    "title": "Networks and environments are protected from unauthorized logical access and usage",
+    "description": "AI inference endpoints and training infrastructure are network-segmented and protected from unauthorized access.",
+    "ai_relevance": "high",
+    "ai_notes": "Inference APIs should be behind API gateways with authentication. Training clusters should be network-isolated. Model registries require access logging.",
+    "informative_references": {
+      "nist_ai_rmf": ["GOVERN 6.2", "MANAGE 2.2"],
+      "iso_42001": ["8.1"],
+      "mitre_atlas": ["AML.T0024", "AML.T0035"],
+      "owasp_llm": ["LLM02", "LLM07"]
+    }
+  }
+]
